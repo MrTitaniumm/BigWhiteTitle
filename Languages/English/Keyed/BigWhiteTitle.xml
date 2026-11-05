@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <BWT_Category>Big White Title</BWT_Category>
+
+  <BWT_Enabled>Enable cinematics</BWT_Enabled>
+  <BWT_EnabledTip>When off, no title cards play automatically. Debug keys still work.</BWT_EnabledTip>
+
+  <BWT_AutoPause>Pause game during cinematics</BWT_AutoPause>
+  <BWT_AutoPauseTip>Pauses while the camera is taken over, so nobody dies from being unseen.</BWT_AutoPauseTip>
+
+  <BWT_DuckMusic>Lower music during cinematics</BWT_DuckMusic>
+  <BWT_DuckMusicTip>Music fades to silence before the title appears, then fades back.</BWT_DuckMusicTip>
+
+  <BWT_OncePerBoss>Show each boss only once</BWT_OncePerBoss>
+  <BWT_OncePerBossTip>Recorded in the save file. The same boss kind never plays twice.</BWT_OncePerBossTip>
+
+  <BWT_OncePerMap>Show each map only once</BWT_OncePerMap>
+  <BWT_OncePerMapTip>Recorded in the save file. Re-entering the same special map does not play again.</BWT_OncePerMapTip>
+
+  <BWT_OncePerBiome>Show each biome only once</BWT_OncePerBiome>
+  <BWT_OncePerBiomeTip>Recorded in the save file. Re-entering the same special biome does not play again.</BWT_OncePerBiomeTip>
+
+  <BWT_ZoomDur>Zoom in / out: {0}s</BWT_ZoomDur>
+  <BWT_PanDur>Camera pan: {0}s</BWT_PanDur>
+  <BWT_BossSize>Boss camera size: {0} (lower = closer)</BWT_BossSize>
+  <BWT_BossDelay>Delay after boss appears: {0}s</BWT_BossDelay>
+  <BWT_MapDelay>Delay after entering a map: {0}s</BWT_MapDelay>
+  <BWT_MapCooldown>Map cinematic cooldown: {0}s</BWT_MapCooldown>
+  <BWT_BossCooldown>Boss cinematic cooldown: {0}s</BWT_BossCooldown>
+
+  <BWT_Recorded>Recorded in this save: {0} boss kinds, {1} maps, {2} biomes</BWT_Recorded>
+  <BWT_RecordedNone>Recorded in this save: (no save loaded)</BWT_RecordedNone>
+
+  <BWT_Reset>Reset "already shown" records</BWT_Reset>
+  <BWT_ResetDone>Reset. Those cards will play again next time.</BWT_ResetDone>
+  <BWT_ResetNoSave>No save is loaded, nothing to reset.</BWT_ResetNoSave>
+
+  <BWT_RestoreMusic>Restore music now</BWT_RestoreMusic>
+</LanguageData>

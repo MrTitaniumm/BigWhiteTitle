@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ============================================================
+       图片按来源分目录存放：Textures/Titles/<来源>/<名字>.png
+       texture 字段写「子目录/名字」（不带 .png，也不带 Textures/Titles 前缀）。
+       英文版自动加 _en 后缀。
+       ============================================================ -->
+
+  <!-- ============ 原版 · 地图 ============ -->
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_Mechhive</defName>
+    <kind>Map</kind>
+    <target>Mechhive</target>
+    <texture>Vanilla/Mechhive</texture>
+    <text>机械主巢</text>
+    <textEn>MECHHIVE</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_MetalHell</defName>
+    <kind>Map</kind>
+    <target>MetalHell</target>
+    <texture>Vanilla/MetalHell</texture>
+    <text>金属地狱</text>
+    <textEn>METAL HELL</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_InsectLair</defName>
+    <kind>Map</kind>
+    <target>InsectLair</target>
+    <texture>Vanilla/InsectLair</texture>
+    <text>虫穴</text>
+    <textEn>INSECT LAIR</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <!-- ============ 原版 · 群系 ============ -->
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_Glowforest</defName>
+    <kind>Biome</kind>
+    <target>Glowforest</target>
+    <texture>Vanilla/Glowforest</texture>
+    <text>萤光森林</text>
+    <textEn>GLOWFOREST</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_Scarlands</defName>
+    <kind>Biome</kind>
+    <target>Scarlands</target>
+    <texture>Vanilla/Scarlands</texture>
+    <text>焦痕废土</text>
+    <textEn>SCARLANDS</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_LavaField</defName>
+    <kind>Biome</kind>
+    <target>LavaField</target>
+    <texture>Vanilla/LavaField</texture>
+    <text>熔岩荒原</text>
+    <textEn>LAVA FIELD</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_GlacialPlain</defName>
+    <kind>Biome</kind>
+    <target>GlacialPlain</target>
+    <texture>Vanilla/GlacialPlain</texture>
+    <text>冰蚀平原</text>
+    <textEn>GLACIAL PLAIN</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <!-- ============ 原版 · 首领 ============ -->
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_Warqueen</defName>
+    <kind>Boss</kind>
+    <target>Mech_Warqueen</target>
+    <texture>Vanilla/Mech_Warqueen</texture>
+    <text>战争女皇</text>
+    <textEn>WAR QUEEN</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_Apocriton</defName>
+    <kind>Boss</kind>
+    <target>Mech_Apocriton</target>
+    <texture>Vanilla/Mech_Apocriton</texture>
+    <text>憎恶毒蜂</text>
+    <textEn>APOCRITON</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_Diabolus</defName>
+    <kind>Boss</kind>
+    <target>Mech_Diabolus</target>
+    <texture>Vanilla/Mech_Diabolus</texture>
+    <text>炼狱魔王</text>
+    <textEn>DIABOLUS</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <!-- ============ 远古无定形威胁（创意工坊 3313313985） ============ -->
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_AAT_Base</defName>
+    <kind>Boss</kind>
+    <target>BreadMo_AAT_BasePawnKind</target>
+    <texture>AncientAmorphousThreat/BreadMo_AAT_BasePawnKind</texture>
+    <text>AMORPHOUS</text>
+    <textEn>AMORPHOUS</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <!-- ============ 失能机关 The Dead Man's Switch（创意工坊 3121742525）
+       该模组无中文语言包，中文名为自定。 ============ -->
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_DMS_Geochelone</defName>
+    <kind>Boss</kind>
+    <target>DMS_Mech_Geochelone</target>
+    <texture>DeadMansSwitch/DMS_Mech_Geochelone</texture>
+    <text>象龟</text>
+    <textEn>GEOCHELONE</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_DMS_Tarbosaurus</defName>
+    <kind>Boss</kind>
+    <target>DMS_Mech_Tarbosaurus</target>
+    <texture>DeadMansSwitch/DMS_Mech_Tarbosaurus</texture>
+    <text>骇蜥</text>
+    <textEn>TARBOSAURUS</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <!-- ============ Alpha Mechs（创意工坊 2973169158）
+       中文取自官方语言包 Alpha Mechs_zh。 ============ -->
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_AM_Apoptosis</defName>
+    <kind>Boss</kind>
+    <target>AM_Apoptosis</target>
+    <texture>AlphaMechs/AM_Apoptosis</texture>
+    <text>憎恶骇蜂</text>
+    <textEn>APOPTOSIS</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_AM_Infernus</defName>
+    <kind>Boss</kind>
+    <target>AM_Infernus</target>
+    <texture>AlphaMechs/AM_Infernus</texture>
+    <text>炼狱冥神</text>
+    <textEn>INFERNUS</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_AM_WarEmpress</defName>
+    <kind>Boss</kind>
+    <target>AM_WarEmpress</target>
+    <texture>AlphaMechs/AM_WarEmpress</texture>
+    <text>战争女帝</text>
+    <textEn>WAR EMPRESS</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+</Defs>

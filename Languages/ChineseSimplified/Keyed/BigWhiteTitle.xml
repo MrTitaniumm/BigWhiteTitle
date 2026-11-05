@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <BWT_Category>雷霆白字</BWT_Category>
+
+  <BWT_Enabled>启用演出</BWT_Enabled>
+  <BWT_EnabledTip>关闭后不再自动播放任何白字。</BWT_EnabledTip>
+
+  <BWT_AutoPause>演出期间暂停游戏</BWT_AutoPause>
+  <BWT_AutoPauseTip>镜头移动时暂停。</BWT_AutoPauseTip>
+
+  <BWT_DuckMusic>演出期间压低背景音乐</BWT_DuckMusic>
+  <BWT_DuckMusicTip>音乐会在白字出现前渐降到 0，结束后渐回。</BWT_DuckMusicTip>
+
+  <BWT_OncePerBoss>每种首领只显示一次</BWT_OncePerBoss>
+  <BWT_OncePerBossTip>记录写进存档。同一种首领第二次出现时不再演出。</BWT_OncePerBossTip>
+
+  <BWT_OncePerMap>每张地图只显示一次</BWT_OncePerMap>
+  <BWT_OncePerMapTip>记录写进存档。同一张特殊地图第二次进入时不再演出。</BWT_OncePerMapTip>
+
+  <BWT_OncePerBiome>每种群系只显示一次</BWT_OncePerBiome>
+  <BWT_OncePerBiomeTip>记录写进存档。同一种特殊群系第二次进入时不再演出。</BWT_OncePerBiomeTip>
+
+  <BWT_ZoomDur>拉远 / 拉回时长：{0} 秒</BWT_ZoomDur>
+  <BWT_PanDur>平移时长：{0} 秒</BWT_PanDur>
+  <BWT_BossSize>首领镜头尺寸：{0}（越小越近）</BWT_BossSize>
+  <BWT_BossDelay>首领出现后延迟：{0} 秒</BWT_BossDelay>
+  <BWT_MapDelay>进入地图后延迟：{0} 秒</BWT_MapDelay>
+  <BWT_MapCooldown>地图演出冷却：{0} 秒</BWT_MapCooldown>
+  <BWT_BossCooldown>首领演出冷却：{0} 秒</BWT_BossCooldown>
+
+  <BWT_Recorded>本存档已记录：首领 {0} 种 · 地图 {1} 张 · 群系 {2} 种</BWT_Recorded>
+  <BWT_RecordedNone>本存档已记录：（未载入存档）</BWT_RecordedNone>
+
+  <BWT_Reset>重置「已显示」记录</BWT_Reset>
+  <BWT_ResetDone>已重置。这些卡片下次遇到时会重新演出。</BWT_ResetDone>
+  <BWT_ResetNoSave>当前没有载入的存档，无需重置。</BWT_ResetNoSave>
+
+  <BWT_RestoreMusic>立即恢复背景音乐</BWT_RestoreMusic>
+</LanguageData>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>雷霆白字（Big White Title）</name>
+  <author>MrTitanium</author>
+  <packageId>MrTitanium.BigWhiteTitle</packageId>
+  <modVersion>0.1.0</modVersion>
+  <description>雷霆白字mod:当进入特殊地图、特殊群系，或boss登场时，显示一个雷霆白字。类似于《control》或《明日方舟：终末地》的出场方式。
+现已支持部分其他mod的特殊地图、特殊群系，或boss。
+
+目前支持：
+-远古无定形威胁
+-失能机关 - The Dead Man's Switch(1.6)
+欢迎反馈更多你希望出现的mod内容！
+
+支持其他模组通过 TitleCardDef 追加自己的标题卡。
+
+Big White Title: a huge white title slams onto the screen when you enter a special map or biome, or when a boss arrives — in the style of Control or Arknights: Endfield.
+Now supports special maps, biomes and bosses from some other mods.
+
+Currently supported:
+- Ancient amorphous threat
+- The Dead Man's Switch (1.6)
+Tell me which mods you'd like to see covered!
+
+Other mods can add their own title cards through TitleCardDef.</description>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+</ModMetaData>
