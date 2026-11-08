@@ -128,11 +128,9 @@ namespace BigWhiteTitle
                 sSource.spatialBlend = 0f;      // 2D：跟着镜头，不做空间衰减
 
                 sThud = TryLoadLocalWav();
+                // 找不到 wav 就静音，不再用程序化合成的替身音
                 if (sThud == null)
-                {
-                    sThud = BuildThud();
-                    BwtLog.Info("[BWT] 音效：使用合成音");
-                }
+                    BwtLog.Info("[BWT] 音效：thud.wav 未找到，本次静音");
                 BwtLog.Info("[BWT] thud clip = " + (sThud == null ? "NULL" : sThud.length.ToString("0.00") + "s"));
             }
             catch (Exception e)
@@ -318,49 +316,6 @@ namespace BigWhiteTitle
                 Log.Warning("[BWT] 加载 thud_local.wav 失败：" + e.Message);
                 return null;
             }
-        }
-
-        static AudioClip BuildThud()
-        {
-            const int rate = 44100;
-            const float dur = 0.90f;
-            int n = Mathf.CeilToInt(rate * dur);
-            float[] data = new float[n];
-
-            // 1) 低频下滑正弦：130Hz -> 42Hz，指数衰减
-            float phase = 0f;
-            for (int i = 0; i < n; i++)
-            {
-                float t = (float)i / rate;
-                float f = Mathf.Lerp(130f, 42f, Mathf.Clamp01(t / 0.45f));
-                phase += 2f * Mathf.PI * f / rate;
-                data[i] += Mathf.Sin(phase) * Mathf.Exp(-t * 5.5f) * 0.85f;
-            }
-
-            // 2) 冲击噪声：极短、快速衰减，给"砸下来"的毛刺
-            var rng = new System.Random(7);
-            int noiseN = Mathf.Min(n, Mathf.CeilToInt(rate * 0.06f));
-            for (int i = 0; i < noiseN; i++)
-            {
-                float t = (float)i / rate;
-                float env = Mathf.Exp(-t * 90f);
-                data[i] += ((float)rng.NextDouble() * 2f - 1f) * env * 0.35f;
-            }
-
-            // 3) 归一化 + 尾部淡出
-            float peak = 0.001f;
-            for (int i = 0; i < n; i++) peak = Mathf.Max(peak, Mathf.Abs(data[i]));
-            float gain = 0.90f / peak;
-            for (int i = 0; i < n; i++)
-            {
-                float t = (float)i / rate;
-                float fade = t > dur - 0.08f ? (dur - t) / 0.08f : 1f;
-                data[i] = Mathf.Clamp(data[i] * gain * fade, -1f, 1f);
-            }
-
-            AudioClip clip = AudioClip.Create("BWT_Thud", n, 1, rate, false);
-            clip.SetData(data, 0);
-            return clip;
         }
 
         static void PlayThud()

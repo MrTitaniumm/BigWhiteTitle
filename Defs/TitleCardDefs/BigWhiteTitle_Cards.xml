@@ -165,4 +165,26 @@
     <textEn>WAR EMPRESS</textEn>
   </BigWhiteTitle.TitleCardDef>
 
+  <!-- ============ Tyranid!（创意工坊 3829426180）
+       该模组没有 BossDef，首领通过任务召唤；PawnKindDef 名称即目标。
+       中文取自官方简体中文翻译包（3831346237）。 ============ -->
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_Tyranid_Deathleaper</defName>
+    <kind>Boss</kind>
+    <target>Tyranid_Deathleaper</target>
+    <texture>Tyranid/Deathleaper</texture>
+    <text>死亡跃袭者</text>
+    <textEn>DEATHLEAPER</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
+  <BigWhiteTitle.TitleCardDef>
+    <defName>BWT_Card_Tyranid_OldOneEye</defName>
+    <kind>Boss</kind>
+    <target>Tyranid_OldOneEye</target>
+    <texture>Tyranid/OldOneEye</texture>
+    <text>老独眼</text>
+    <textEn>OLD ONE EYE</textEn>
+  </BigWhiteTitle.TitleCardDef>
+
 </Defs>
